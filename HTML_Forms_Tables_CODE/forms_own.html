@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <button>OUTISDE FORM!</button>
+    <form action="/tacos">
+        <!-- default behavior of a button inside a form: do the form action -->
+        <!-- can change it through setting the type -->
+        <button type="button">PLEASE DO NOT SUBMIT THE FORM</button>
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username">    
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input id="password" type="password" placeholder="password">
+        </p>
+        <button>IN THE MIDDLE</button>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input type="color" id="color">
+        </p>
+        <p>
+            <label for="number">
+                Enter a number:
+                <input type="number" placeholder="enter a number">
+            </label>
+        </p>
+        <p><input type="text"></p>
+        <button type="button">Regular button (won't submit)</button>
+        <button type="submit">Submit!!</button>
+        <input type="submit" value="click me">
+    </form>
+    <hr>
+    <button>Not Inside Form</button>
+    <form action="https://www.reddit.com/search">
+        
+    </form>
+    
+</body>
+</html>
