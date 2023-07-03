@@ -1,0 +1,38 @@
+/* h2 {
+    color: #5FCFFC;
+    background-color: plum;
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background: orange;
+}
+
+body {
+    background-color: #c5e;
+} */
+
+h1 {
+    text-align: center;
+    /* width: 1%; */
+    font-weight: normal;
+    text-decoration: blue underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    /* font-family: 'Segoe UI', Futura, Arial, sans-serif; */
+    font-family: monospace;
+}
+
+p {
+    text-align: left;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
