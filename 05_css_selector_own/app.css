@@ -1,0 +1,144 @@
+/* Universal selector */
+/* * { */
+    /* color: pink; */
+    /* background-color:cyan; */
+/* } */
+
+/* Element selector */
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+body {
+    background-color: #f1faee;
+}
+
+/* List selector: combine multiple elements */
+h1, h2 {
+    color: #1d3557;
+}
+
+/* ID selector */
+/* Note: ID should be unique */
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+/* Class selector */
+span {
+    color: #457b9d
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+
+/* Descendant selector */
+/* Combined with class selector here*/
+.post a {
+    color: #457b9d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Note: although a is not the direct child of footer, it's still the descendant of footer*/
+footer a {
+    color: #e63946;
+}
+
+
+/* Adjacent selector */
+/* style the latter element immediately after the former element, on the same level */
+
+/* input + button {
+    background-color: pink;
+} */
+
+h2 + button {
+    font-size: 20px;
+    /* background-color: magenta; */
+}
+
+/* Diect child/descendant selector*/
+/* Direct: one level down */
+footer > a {
+    color: #a8dadc;
+}
+
+
+/* Attribute selector */
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* section[class="post"] {
+    background-color: purple;
+} */
+
+/* section.post {
+    background-color: purple;
+} */
+
+a[href*="google"] {
+    color: #1d3557;
+}
+
+
+/* pseudo classes */
+
+/* :hover, :active, :checked, :nth-of-type(), :nth-child() */
+/* :first, :first-child, :not() */
+
+/* button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+} */
+
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* 3: the third one, 3n: every 3 elements */
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+
+/* pseudo elements */
+/* ::after, ::before, ::first-letter, ::first-line, ::selection */
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple
+}
+
+p::selection {
+    background-color: #fcbf19;
+}
+
+
+/* Specificity */
+/* More specific selector would apply to its style */
+/* id > class > element */
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+
+button:hover {
+    background-color: olive;
+}
+
